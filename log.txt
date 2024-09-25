@@ -1,0 +1,1693 @@
+2024-09-23 20:14:17,101 - __main__ - Run Main
+2024-09-23 20:14:17,101 - __main__ - Bot started
+2024-09-23 20:14:40,756 - __main__ - Run Main
+2024-09-23 20:14:40,757 - __main__ - Bot started
+2024-09-23 20:14:58,234 - __main__ - Run Main
+2024-09-23 20:14:58,234 - __main__ - Bot started
+2024-09-23 20:16:01,551 - __main__ - Run Main
+2024-09-23 20:16:01,552 - __main__ - Bot started
+2024-09-23 20:16:43,386 - __main__ - Run Main
+2024-09-23 20:16:43,386 - __main__ - Bot started
+2024-09-23 20:16:43,386 - aiogram.dispatcher - Start polling
+2024-09-23 20:16:43,608 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:16:54,287 - aiogram.event - Update id=142969396 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 20:17:03,633 - aiogram.event - Update id=142969397 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:17:20,928 - aiogram.event - Update id=142969398 is handled. Duration 234 ms by bot id=7510687058
+2024-09-23 20:17:24,905 - aiogram.event - Update id=142969399 is handled. Duration 87 ms by bot id=7510687058
+2024-09-23 20:17:32,830 - aiogram.event - Update id=142969400 is handled. Duration 86 ms by bot id=7510687058
+2024-09-23 20:17:40,298 - aiogram.event - Update id=142969401 is handled. Duration 83 ms by bot id=7510687058
+2024-09-23 20:17:46,236 - aiogram.event - Update id=142969402 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:17:46,236 - aiogram.event - Cause exception while process update id=142969402 by bot id=7510687058
+TypeError: 'coroutine' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 54, in location
+    text=f"Имя: {data['credentials']}\nТелефон: {data['phone_number']}\nОпыт работы: {data['work_expierience']}\nАдрес: {data['location']}")
+                 ~~~~^^^^^^^^^^^^^^^
+TypeError: 'coroutine' object is not subscriptable
+2024-09-23 20:19:09,050 - aiogram.event - Update id=142969403 is handled. Duration 171 ms by bot id=7510687058
+2024-09-23 20:19:11,701 - aiogram.event - Update id=142969404 is handled. Duration 99 ms by bot id=7510687058
+2024-09-23 20:19:16,165 - aiogram.event - Update id=142969405 is handled. Duration 138 ms by bot id=7510687058
+2024-09-23 20:19:21,217 - aiogram.event - Update id=142969406 is handled. Duration 71 ms by bot id=7510687058
+2024-09-23 20:19:26,933 - aiogram.event - Update id=142969407 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:19:26,933 - aiogram.event - Cause exception while process update id=142969407 by bot id=7510687058
+TypeError: 'coroutine' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 54, in location
+    text=f"Имя: {data['credentials']}\nТелефон: {data['phone_number']}\nОпыт работы: {data['work_expierience']}\nАдрес: {data['location']}")
+                 ~~~~^^^^^^^^^^^^^^^
+TypeError: 'coroutine' object is not subscriptable
+2024-09-23 20:19:55,947 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:19:55,947 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:19:55,947 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:19:58,425 - __main__ - Run Main
+2024-09-23 20:19:58,426 - __main__ - Bot started
+2024-09-23 20:19:58,426 - aiogram.dispatcher - Start polling
+2024-09-23 20:19:58,575 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:20:00,610 - aiogram.event - Update id=142969408 is handled. Duration 239 ms by bot id=7510687058
+2024-09-23 20:20:05,352 - aiogram.event - Update id=142969409 is handled. Duration 383 ms by bot id=7510687058
+2024-09-23 20:20:07,508 - aiogram.event - Update id=142969410 is handled. Duration 112 ms by bot id=7510687058
+2024-09-23 20:20:08,925 - aiogram.event - Update id=142969411 is handled. Duration 87 ms by bot id=7510687058
+2024-09-23 20:20:10,034 - aiogram.event - Update id=142969412 is not handled. Duration 40 ms by bot id=7510687058
+2024-09-23 20:20:10,034 - aiogram.event - Cause exception while process update id=142969412 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 52, in location
+    await bot.send_message(
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 20:20:22,563 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:20:22,564 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:20:22,564 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:20:24,653 - __main__ - Run Main
+2024-09-23 20:20:24,653 - __main__ - Bot started
+2024-09-23 20:20:24,654 - aiogram.dispatcher - Start polling
+2024-09-23 20:20:24,818 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:20:29,509 - aiogram.event - Update id=142969413 is handled. Duration 261 ms by bot id=7510687058
+2024-09-23 20:20:32,084 - aiogram.event - Update id=142969414 is handled. Duration 76 ms by bot id=7510687058
+2024-09-23 20:20:32,700 - aiogram.event - Update id=142969415 is handled. Duration 69 ms by bot id=7510687058
+2024-09-23 20:20:33,546 - aiogram.event - Update id=142969416 is handled. Duration 157 ms by bot id=7510687058
+2024-09-23 20:20:34,298 - aiogram.event - Update id=142969417 is not handled. Duration 66 ms by bot id=7510687058
+2024-09-23 20:20:34,298 - aiogram.event - Cause exception while process update id=142969417 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 52, in location
+    await bot.send_message(
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 20:20:35,163 - aiogram.event - Update id=142969418 is not handled. Duration 67 ms by bot id=7510687058
+2024-09-23 20:20:35,163 - aiogram.event - Cause exception while process update id=142969418 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 52, in location
+    await bot.send_message(
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 20:21:05,162 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:21:05,163 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:21:05,163 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:21:07,050 - __main__ - Run Main
+2024-09-23 20:21:07,050 - __main__ - Bot started
+2024-09-23 20:21:07,051 - aiogram.dispatcher - Start polling
+2024-09-23 20:21:07,214 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:21:08,708 - aiogram.event - Update id=142969419 is handled. Duration 244 ms by bot id=7510687058
+2024-09-23 20:21:10,830 - aiogram.event - Update id=142969420 is handled. Duration 83 ms by bot id=7510687058
+2024-09-23 20:21:11,486 - aiogram.event - Update id=142969421 is handled. Duration 99 ms by bot id=7510687058
+2024-09-23 20:21:12,298 - aiogram.event - Update id=142969422 is handled. Duration 76 ms by bot id=7510687058
+2024-09-23 20:21:12,776 - aiogram.event - Update id=142969423 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:21:12,776 - aiogram.event - Cause exception while process update id=142969423 by bot id=7510687058
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 52, in location
+    await message.answer(
+          ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/types/message.py", line 2038, in answer
+    return SendMessage(
+           ^^^^^^^^^^^^
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+2024-09-23 20:21:13,765 - aiogram.event - Update id=142969424 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:21:13,765 - aiogram.event - Cause exception while process update id=142969424 by bot id=7510687058
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 52, in location
+    await message.answer(
+          ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/types/message.py", line 2038, in answer
+    return SendMessage(
+           ^^^^^^^^^^^^
+TypeError: aiogram.methods.send_message.SendMessage() got multiple values for keyword argument 'chat_id'
+2024-09-23 20:21:43,428 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:21:43,429 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:21:43,429 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:21:45,422 - __main__ - Run Main
+2024-09-23 20:21:45,423 - __main__ - Bot started
+2024-09-23 20:21:45,423 - aiogram.dispatcher - Start polling
+2024-09-23 20:21:45,584 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:23:59,967 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:23:59,968 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:23:59,968 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:24:02,101 - __main__ - Run Main
+2024-09-23 20:24:02,101 - __main__ - Bot started
+2024-09-23 20:24:02,101 - aiogram.dispatcher - Start polling
+2024-09-23 20:24:02,245 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:24:04,210 - aiogram.event - Update id=142969425 is handled. Duration 293 ms by bot id=7510687058
+2024-09-23 20:24:06,710 - aiogram.event - Update id=142969426 is handled. Duration 401 ms by bot id=7510687058
+2024-09-23 20:24:07,917 - aiogram.event - Update id=142969427 is handled. Duration 79 ms by bot id=7510687058
+2024-09-23 20:24:08,422 - aiogram.event - Update id=142969428 is handled. Duration 81 ms by bot id=7510687058
+2024-09-23 20:24:09,159 - aiogram.event - Update id=142969429 is handled. Duration 97 ms by bot id=7510687058
+2024-09-23 20:25:46,077 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:25:46,077 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:25:46,077 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:25:48,198 - __main__ - Run Main
+2024-09-23 20:25:48,199 - __main__ - Bot started
+2024-09-23 20:25:48,199 - aiogram.dispatcher - Start polling
+2024-09-23 20:25:48,388 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:25:49,792 - aiogram.event - Update id=142969430 is handled. Duration 239 ms by bot id=7510687058
+2024-09-23 20:25:51,251 - aiogram.event - Update id=142969431 is handled. Duration 69 ms by bot id=7510687058
+2024-09-23 20:25:51,937 - aiogram.event - Update id=142969432 is handled. Duration 88 ms by bot id=7510687058
+2024-09-23 20:25:52,656 - aiogram.event - Update id=142969433 is handled. Duration 80 ms by bot id=7510687058
+2024-09-23 20:25:53,848 - aiogram.event - Update id=142969434 is handled. Duration 86 ms by bot id=7510687058
+2024-09-23 20:43:12,883 - aiogram.event - Update id=142969435 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:43:21,246 - aiogram.event - Update id=142969436 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:43:23,869 - aiogram.event - Update id=142969437 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 20:48:36,523 - aiogram.event - Update id=142969438 is handled. Duration 154 ms by bot id=7510687058
+2024-09-23 20:48:45,581 - aiogram.event - Update id=142969439 is handled. Duration 185 ms by bot id=7510687058
+2024-09-23 20:50:36,689 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:50:36,689 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:50:36,689 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:54:19,586 - __main__ - Run Main
+2024-09-23 20:54:19,590 - __main__ - Bot started
+2024-09-23 20:54:19,590 - aiogram.dispatcher - Start polling
+2024-09-23 20:54:19,724 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:54:20,020 - aiogram.event - Update id=142969440 is handled. Duration 242 ms by bot id=7510687058
+2024-09-23 20:54:23,838 - aiogram.dispatcher - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-23 20:54:23,838 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7510687058)
+2024-09-23 20:54:35,078 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7510687058)
+2024-09-23 20:54:39,095 - aiogram.event - Update id=142969441 is handled. Duration 185 ms by bot id=7510687058
+2024-09-23 20:56:21,918 - aiogram.event - Update id=142969442 is not handled. Duration 115 ms by bot id=7510687058
+2024-09-23 20:56:21,919 - aiogram.event - Cause exception while process update id=142969442 by bot id=7510687058
+TelegramMigrateToChat: Telegram server says - Bad Request: group chat was upgraded to a supergroup chat
+(background on this error at: https://core.telegram.org/bots/api#responseparameters)
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 33, in credentials
+    await message.answer("Введите актуальные контактные данные (@ и тел.)")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 114, in check_response
+    raise TelegramMigrateToChat(
+aiogram.exceptions.TelegramMigrateToChat: Telegram server says - Bad Request: group chat was upgraded to a supergroup chat
+(background on this error at: https://core.telegram.org/bots/api#responseparameters)
+2024-09-23 20:56:37,845 - aiogram.event - Update id=142969443 is handled. Duration 165 ms by bot id=7510687058
+2024-09-23 20:56:40,689 - aiogram.dispatcher - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-23 20:56:40,689 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7510687058)
+2024-09-23 20:56:51,888 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7510687058)
+2024-09-23 20:57:06,379 - aiogram.event - Update id=142969444 is handled. Duration 469 ms by bot id=7510687058
+2024-09-23 20:57:13,359 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 20:57:13,359 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:57:13,359 - aiogram.dispatcher - Polling stopped
+2024-09-23 20:59:31,620 - __main__ - Run Main
+2024-09-23 20:59:31,621 - __main__ - Bot started
+2024-09-23 20:59:31,621 - aiogram.dispatcher - Start polling
+2024-09-23 20:59:31,759 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 20:59:31,811 - aiogram.event - Update id=142969445 is not handled. Duration 2 ms by bot id=7510687058
+2024-09-23 20:59:31,811 - aiogram.event - Update id=142969446 is not handled. Duration 2 ms by bot id=7510687058
+2024-09-23 20:59:31,811 - aiogram.event - Update id=142969447 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 20:59:32,302 - aiogram.event - Update id=142969448 is handled. Duration 493 ms by bot id=7510687058
+2024-09-23 20:59:35,026 - aiogram.dispatcher - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-23 20:59:35,026 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7510687058)
+2024-09-23 20:59:46,177 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7510687058)
+2024-09-23 21:00:16,983 - aiogram.event - Update id=142969449 is handled. Duration 216 ms by bot id=7510687058
+2024-09-23 21:00:21,144 - aiogram.dispatcher - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-23 21:00:21,144 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7510687058)
+2024-09-23 21:00:27,623 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:00:27,624 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:00:27,624 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:00:43,442 - __main__ - Run Main
+2024-09-23 21:00:43,443 - __main__ - Bot started
+2024-09-23 21:00:43,443 - aiogram.dispatcher - Start polling
+2024-09-23 21:00:43,580 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:00:43,919 - aiogram.event - Update id=142969450 is handled. Duration 291 ms by bot id=7510687058
+2024-09-23 21:01:30,518 - aiogram.event - Update id=142969451 is handled. Duration 197 ms by bot id=7510687058
+2024-09-23 21:02:08,666 - aiogram.dispatcher - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-09-23 21:02:08,667 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7510687058)
+2024-09-23 21:02:14,311 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7510687058)
+2024-09-23 21:02:14,478 - aiogram.event - Update id=142969452 is handled. Duration 166 ms by bot id=7510687058
+2024-09-23 21:02:20,019 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:02:20,019 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:02:20,019 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:04:34,633 - __main__ - Run Main
+2024-09-23 21:04:34,633 - __main__ - Bot started
+2024-09-23 21:04:34,634 - aiogram.dispatcher - Start polling
+2024-09-23 21:04:34,776 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:04:34,836 - aiogram.event - Update id=142969453 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 21:04:34,836 - aiogram.event - Update id=142969454 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 21:04:59,059 - aiogram.event - Update id=142969455 is handled. Duration 248 ms by bot id=7510687058
+2024-09-23 21:05:00,844 - aiogram.event - Update id=142969456 is handled. Duration 70 ms by bot id=7510687058
+2024-09-23 21:05:02,317 - aiogram.event - Update id=142969457 is handled. Duration 126 ms by bot id=7510687058
+2024-09-23 21:05:04,038 - aiogram.event - Update id=142969458 is handled. Duration 165 ms by bot id=7510687058
+2024-09-23 21:05:05,881 - aiogram.event - Update id=142969459 is handled. Duration 106 ms by bot id=7510687058
+2024-09-23 21:11:58,284 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:11:58,285 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:11:58,285 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:12:00,515 - __main__ - Run Main
+2024-09-23 21:12:00,515 - __main__ - Bot started
+2024-09-23 21:12:00,515 - aiogram.dispatcher - Start polling
+2024-09-23 21:12:00,661 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:12:12,962 - aiogram.event - Update id=142969460 is handled. Duration 276 ms by bot id=7510687058
+2024-09-23 21:12:21,287 - aiogram.event - Update id=142969461 is handled. Duration 293 ms by bot id=7510687058
+2024-09-23 21:12:22,639 - aiogram.event - Update id=142969462 is handled. Duration 88 ms by bot id=7510687058
+2024-09-23 21:12:24,050 - aiogram.event - Update id=142969463 is handled. Duration 140 ms by bot id=7510687058
+2024-09-23 21:12:25,237 - aiogram.event - Update id=142969464 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 21:12:25,237 - aiogram.event - Cause exception while process update id=142969464 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 57, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:12:34,689 - aiogram.event - Update id=142969465 is handled. Duration 87 ms by bot id=7510687058
+2024-09-23 21:12:36,843 - aiogram.event - Update id=142969466 is handled. Duration 96 ms by bot id=7510687058
+2024-09-23 21:12:38,299 - aiogram.event - Update id=142969467 is handled. Duration 90 ms by bot id=7510687058
+2024-09-23 21:12:39,578 - aiogram.event - Update id=142969468 is handled. Duration 86 ms by bot id=7510687058
+2024-09-23 21:12:42,280 - aiogram.event - Update id=142969469 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 21:12:42,280 - aiogram.event - Cause exception while process update id=142969469 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 57, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:16:06,381 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:16:06,381 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:16:06,382 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:16:08,258 - __main__ - Run Main
+2024-09-23 21:16:08,258 - __main__ - Bot started
+2024-09-23 21:16:08,259 - aiogram.dispatcher - Start polling
+2024-09-23 21:16:08,406 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:16:31,846 - aiogram.event - Update id=142969470 is handled. Duration 596 ms by bot id=7510687058
+2024-09-23 21:16:34,049 - aiogram.event - Update id=142969471 is handled. Duration 126 ms by bot id=7510687058
+2024-09-23 21:16:35,427 - aiogram.event - Update id=142969472 is handled. Duration 75 ms by bot id=7510687058
+2024-09-23 21:16:37,113 - aiogram.event - Update id=142969473 is handled. Duration 128 ms by bot id=7510687058
+2024-09-23 21:16:38,419 - aiogram.event - Update id=142969474 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 21:16:38,419 - aiogram.event - Cause exception while process update id=142969474 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 57, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:23:08,312 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:23:08,312 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:23:08,312 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:23:10,023 - __main__ - Run Main
+2024-09-23 21:23:10,024 - __main__ - Bot started
+2024-09-23 21:23:10,024 - aiogram.dispatcher - Start polling
+2024-09-23 21:23:10,177 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:23:14,721 - aiogram.event - Update id=142969475 is handled. Duration 301 ms by bot id=7510687058
+2024-09-23 21:23:20,549 - aiogram.event - Update id=142969476 is handled. Duration 91 ms by bot id=7510687058
+2024-09-23 21:23:22,103 - aiogram.event - Update id=142969477 is handled. Duration 85 ms by bot id=7510687058
+2024-09-23 21:23:23,599 - aiogram.event - Update id=142969478 is handled. Duration 81 ms by bot id=7510687058
+2024-09-23 21:23:25,772 - aiogram.event - Update id=142969479 is not handled. Duration 1 ms by bot id=7510687058
+2024-09-23 21:23:25,772 - aiogram.event - Cause exception while process update id=142969479 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 56, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:23:30,657 - aiogram.event - Update id=142969480 is handled. Duration 74 ms by bot id=7510687058
+2024-09-23 21:23:32,313 - aiogram.event - Update id=142969481 is handled. Duration 90 ms by bot id=7510687058
+2024-09-23 21:23:35,388 - aiogram.event - Update id=142969482 is handled. Duration 76 ms by bot id=7510687058
+2024-09-23 21:23:37,039 - aiogram.event - Update id=142969483 is handled. Duration 106 ms by bot id=7510687058
+2024-09-23 21:23:38,163 - aiogram.event - Update id=142969484 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 21:23:38,163 - aiogram.event - Cause exception while process update id=142969484 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 56, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:25:44,846 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:25:44,846 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:25:44,846 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:25:46,803 - __main__ - Run Main
+2024-09-23 21:25:46,803 - __main__ - Bot started
+2024-09-23 21:25:46,803 - aiogram.dispatcher - Start polling
+2024-09-23 21:25:46,954 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:27:12,461 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:27:12,461 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:27:12,461 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:27:14,452 - __main__ - Run Main
+2024-09-23 21:27:14,453 - __main__ - Bot started
+2024-09-23 21:27:14,453 - aiogram.dispatcher - Start polling
+2024-09-23 21:27:14,593 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:27:19,171 - aiogram.event - Update id=142969485 is handled. Duration 282 ms by bot id=7510687058
+2024-09-23 21:27:20,974 - aiogram.event - Update id=142969486 is handled. Duration 89 ms by bot id=7510687058
+2024-09-23 21:27:22,312 - aiogram.event - Update id=142969487 is handled. Duration 156 ms by bot id=7510687058
+2024-09-23 21:27:24,226 - aiogram.event - Update id=142969488 is handled. Duration 65 ms by bot id=7510687058
+2024-09-23 21:27:25,492 - aiogram.event - Update id=142969489 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 21:27:25,492 - aiogram.event - Cause exception while process update id=142969489 by bot id=7510687058
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 56, in location
+    kb = InlineKeyboardMarkup()
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-09-23 21:40:52,875 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:40:52,875 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:40:52,875 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:40:55,590 - __main__ - Run Main
+2024-09-23 21:40:55,591 - __main__ - Bot started
+2024-09-23 21:40:55,591 - aiogram.dispatcher - Start polling
+2024-09-23 21:40:55,730 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:41:03,130 - aiogram.event - Update id=142969490 is handled. Duration 463 ms by bot id=7510687058
+2024-09-23 21:41:04,319 - aiogram.event - Update id=142969491 is handled. Duration 178 ms by bot id=7510687058
+2024-09-23 21:41:05,757 - aiogram.event - Update id=142969492 is handled. Duration 139 ms by bot id=7510687058
+2024-09-23 21:41:06,996 - aiogram.event - Update id=142969493 is handled. Duration 196 ms by bot id=7510687058
+2024-09-23 21:41:10,392 - aiogram.event - Update id=142969494 is handled. Duration 122 ms by bot id=7510687058
+2024-09-23 21:45:46,542 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:45:46,543 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:45:46,543 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:45:48,553 - __main__ - Run Main
+2024-09-23 21:45:48,553 - __main__ - Bot started
+2024-09-23 21:45:48,553 - aiogram.dispatcher - Start polling
+2024-09-23 21:45:48,703 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:45:58,526 - aiogram.event - Update id=142969495 is handled. Duration 237 ms by bot id=7510687058
+2024-09-23 21:46:01,181 - aiogram.event - Update id=142969496 is handled. Duration 94 ms by bot id=7510687058
+2024-09-23 21:46:03,997 - aiogram.event - Update id=142969497 is handled. Duration 188 ms by bot id=7510687058
+2024-09-23 21:46:05,622 - aiogram.event - Update id=142969498 is handled. Duration 73 ms by bot id=7510687058
+2024-09-23 21:46:07,911 - aiogram.event - Update id=142969499 is handled. Duration 92 ms by bot id=7510687058
+2024-09-23 21:48:16,686 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:48:16,687 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:48:16,687 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:48:18,769 - __main__ - Run Main
+2024-09-23 21:48:18,769 - __main__ - Bot started
+2024-09-23 21:48:18,769 - aiogram.dispatcher - Start polling
+2024-09-23 21:48:18,913 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:48:22,845 - aiogram.event - Update id=142969500 is handled. Duration 271 ms by bot id=7510687058
+2024-09-23 21:48:30,743 - aiogram.event - Update id=142969501 is handled. Duration 80 ms by bot id=7510687058
+2024-09-23 21:48:32,494 - aiogram.event - Update id=142969502 is handled. Duration 101 ms by bot id=7510687058
+2024-09-23 21:48:34,130 - aiogram.event - Update id=142969503 is handled. Duration 100 ms by bot id=7510687058
+2024-09-23 21:48:35,193 - aiogram.event - Update id=142969504 is handled. Duration 132 ms by bot id=7510687058
+2024-09-23 21:48:39,563 - aiogram.event - Update id=142969505 is handled. Duration 412 ms by bot id=7510687058
+2024-09-23 21:48:41,484 - aiogram.event - Update id=142969506 is handled. Duration 183 ms by bot id=7510687058
+2024-09-23 21:49:33,423 - aiogram.event - Update id=142969507 is handled. Duration 816 ms by bot id=7510687058
+2024-09-23 21:50:39,434 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:50:39,435 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:50:39,435 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:50:41,491 - __main__ - Run Main
+2024-09-23 21:50:41,492 - __main__ - Bot started
+2024-09-23 21:50:41,492 - aiogram.dispatcher - Start polling
+2024-09-23 21:50:41,636 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:50:44,452 - aiogram.event - Update id=142969508 is not handled. Duration 256 ms by bot id=7510687058
+2024-09-23 21:50:44,452 - aiogram.event - Cause exception while process update id=142969508 by bot id=7510687058
+TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 73, in accept_decline
+    await bot.send_message(chat_id=bot_id, text="Ваша заявка принята!")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 128, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+2024-09-23 21:50:47,256 - aiogram.event - Update id=142969509 is not handled. Duration 194 ms by bot id=7510687058
+2024-09-23 21:50:47,256 - aiogram.event - Cause exception while process update id=142969509 by bot id=7510687058
+TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 75, in accept_decline
+    await bot.send_message(chat_id=bot_id, text="Ваша заявка отклонена!")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 128, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+2024-09-23 21:50:48,665 - aiogram.event - Update id=142969510 is not handled. Duration 284 ms by bot id=7510687058
+2024-09-23 21:50:48,665 - aiogram.event - Cause exception while process update id=142969510 by bot id=7510687058
+TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 75, in accept_decline
+    await bot.send_message(chat_id=bot_id, text="Ваша заявка отклонена!")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 128, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+2024-09-23 21:50:48,848 - aiogram.event - Update id=142969511 is not handled. Duration 330 ms by bot id=7510687058
+2024-09-23 21:50:48,848 - aiogram.event - Cause exception while process update id=142969511 by bot id=7510687058
+TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 73, in accept_decline
+    await bot.send_message(chat_id=bot_id, text="Ваша заявка принята!")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 128, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Telegram server says - Forbidden: bots can't send messages to bots
+2024-09-23 21:52:11,633 - aiogram.event - Update id=142969512 is not handled. Duration 0 ms by bot id=7510687058
+2024-09-23 21:54:51,908 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:54:51,908 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:54:51,909 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:54:53,892 - __main__ - Run Main
+2024-09-23 21:54:53,892 - __main__ - Bot started
+2024-09-23 21:54:53,892 - aiogram.dispatcher - Start polling
+2024-09-23 21:54:54,033 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:55:00,561 - aiogram.event - Update id=142969513 is not handled. Duration 263 ms by bot id=7510687058
+2024-09-23 21:55:00,561 - aiogram.event - Cause exception while process update id=142969513 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 73, in accept_decline
+    await bot.send_message(chat_id=chat_id, text="Ваша заявка принята!")
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 21:55:07,882 - aiogram.event - Update id=142969514 is handled. Duration 108 ms by bot id=7510687058
+2024-09-23 21:55:12,320 - aiogram.event - Update id=142969515 is handled. Duration 154 ms by bot id=7510687058
+2024-09-23 21:55:15,032 - aiogram.event - Update id=142969516 is handled. Duration 101 ms by bot id=7510687058
+2024-09-23 21:55:17,318 - aiogram.event - Update id=142969517 is handled. Duration 97 ms by bot id=7510687058
+2024-09-23 21:55:19,191 - aiogram.event - Update id=142969518 is not handled. Duration 86 ms by bot id=7510687058
+2024-09-23 21:55:19,191 - aiogram.event - Cause exception while process update id=142969518 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 59, in location
+    await bot.send_message(chat_id=chat_id,
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 21:55:25,975 - aiogram.event - Update id=142969519 is handled. Duration 87 ms by bot id=7510687058
+2024-09-23 21:55:28,985 - aiogram.event - Update id=142969520 is handled. Duration 83 ms by bot id=7510687058
+2024-09-23 21:55:30,313 - aiogram.event - Update id=142969521 is handled. Duration 134 ms by bot id=7510687058
+2024-09-23 21:55:32,602 - aiogram.event - Update id=142969522 is handled. Duration 209 ms by bot id=7510687058
+2024-09-23 21:55:35,367 - aiogram.event - Update id=142969523 is not handled. Duration 59 ms by bot id=7510687058
+2024-09-23 21:55:35,367 - aiogram.event - Cause exception while process update id=142969523 by bot id=7510687058
+TelegramBadRequest: Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/marvrk/PycharmProjects/bot_form/main/handlers/user_menu.py", line 59, in location
+    await bot.send_message(chat_id=chat_id,
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 2917, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/marvrk/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2024-09-23 21:58:28,080 - aiogram.dispatcher - Received SIGINT signal
+2024-09-23 21:58:28,080 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:58:28,080 - aiogram.dispatcher - Polling stopped
+2024-09-23 21:58:30,099 - __main__ - Run Main
+2024-09-23 21:58:30,099 - __main__ - Bot started
+2024-09-23 21:58:30,100 - aiogram.dispatcher - Start polling
+2024-09-23 21:58:30,247 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-23 21:58:32,234 - aiogram.event - Update id=142969524 is handled. Duration 271 ms by bot id=7510687058
+2024-09-23 21:58:36,425 - aiogram.event - Update id=142969525 is handled. Duration 217 ms by bot id=7510687058
+2024-09-23 21:58:38,116 - aiogram.event - Update id=142969526 is handled. Duration 121 ms by bot id=7510687058
+2024-09-23 21:58:39,735 - aiogram.event - Update id=142969527 is handled. Duration 104 ms by bot id=7510687058
+2024-09-23 21:58:41,677 - aiogram.event - Update id=142969528 is handled. Duration 90 ms by bot id=7510687058
+2024-09-23 21:58:45,642 - aiogram.event - Update id=142969529 is handled. Duration 175 ms by bot id=7510687058
+2024-09-23 21:58:47,482 - aiogram.event - Update id=142969530 is handled. Duration 172 ms by bot id=7510687058
+2024-09-24 18:38:10,190 - __main__ - Run Main
+2024-09-24 18:38:10,190 - __main__ - Bot started
+2024-09-24 18:38:10,190 - aiogram.dispatcher - Start polling
+2024-09-24 18:38:10,340 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-24 18:38:18,944 - aiogram.dispatcher - Received SIGINT signal
+2024-09-24 18:38:18,945 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-24 18:38:18,945 - aiogram.dispatcher - Polling stopped
+2024-09-24 18:38:59,248 - __main__ - Run Main
+2024-09-24 18:38:59,249 - __main__ - Bot started
+2024-09-24 18:38:59,249 - aiogram.dispatcher - Start polling
+2024-09-24 18:38:59,584 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-24 18:39:06,269 - aiogram.event - Update id=142969533 is handled. Duration 331 ms by bot id=7510687058
+2024-09-24 18:39:12,119 - aiogram.event - Update id=142969534 is handled. Duration 103 ms by bot id=7510687058
+2024-09-24 18:39:22,305 - aiogram.event - Update id=142969535 is handled. Duration 68 ms by bot id=7510687058
+2024-09-24 18:41:39,968 - aiogram.dispatcher - Received SIGINT signal
+2024-09-24 18:41:39,969 - aiogram.dispatcher - Polling stopped for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-24 18:41:39,969 - aiogram.dispatcher - Polling stopped
+2024-09-24 18:41:42,347 - __main__ - Run Main
+2024-09-24 18:41:42,347 - __main__ - Bot started
+2024-09-24 18:41:42,347 - aiogram.dispatcher - Start polling
+2024-09-24 18:41:42,489 - aiogram.dispatcher - Run polling for bot @async_hajil_bot id=7510687058 - 'bot_prototype'
+2024-09-24 18:41:51,943 - aiogram.event - Update id=142969536 is handled. Duration 301 ms by bot id=7510687058
+2024-09-24 18:42:01,383 - aiogram.event - Update id=142969537 is handled. Duration 275 ms by bot id=7510687058
+2024-09-24 18:42:11,777 - aiogram.event - Update id=142969538 is handled. Duration 140 ms by bot id=7510687058
+2024-09-24 18:42:14,616 - aiogram.event - Update id=142969539 is handled. Duration 144 ms by bot id=7510687058
